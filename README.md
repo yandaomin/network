@@ -35,7 +35,7 @@ libuv是c语言库，使用起来比较麻烦，且它是非线程安全的网�
 
 ## 应用层
 
-- **TCPServer：**tcp服务器端；
+- **TCPServer：** tcp服务器端；
 
 - **TcpClient：**tcp客户端；
 
