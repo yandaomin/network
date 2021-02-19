@@ -35,9 +35,9 @@ libuv是c语言库，使用起来比较麻烦，且它是非线程安全的网�
 
 ## 应用层
 
-- **TCPServer：**tcp服务器端；
+- **TCPServer：** tcp服务器端；
 
-- **TcpClient：**tcp客户端；
+- **TcpClient：** tcp客户端；
 
 
 
@@ -49,7 +49,7 @@ cmake版本是3.17.2；
 
 ### windows编译
 
-**vs2017：**用cmake gui工具 转为 vs2017+项目文件进行编译；
+**vs2017：** 用cmake gui工具 转为 vs2017+项目文件进行编译；
 
 
 
