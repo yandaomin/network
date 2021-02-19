@@ -19,13 +19,13 @@ libuv是c语言库，使用起来比较麻烦，且它是非线程安全的网�
 
 ### TCP
 
-- **TcpAccepter：**监听器，用于监听新的socket连接，服务器端；
-- **TcpConnection：**连接对象，用于收发消息、监听socket断开事件并向上层反馈；目前仅在TcpOnDataCallback回调处曝露，使用时不要存储TcpConnection的指针，这部分已经在TcpServer中控制其释放，以免造成 crash；
-- **TcpConnecter：**连接器，连接服务器，客户端；
+- **TcpAccepter：** 监听器，用于监听新的socket连接，服务器端；
+- **TcpConnection：** 连接对象，用于收发消息、监听socket断开事件并向上层反馈；目前仅在TcpOnDataCallback回调处曝露，使用时不要存储TcpConnection的指针，这部分已经在TcpServer中控制其释放，以免造成 crash；
+- **TcpConnecter：** 连接器，连接服务器，客户端；
 
 ### UDP
 
-- **UdpNetwork：**udp协议封装，由于UDP是无状态的，所以其只支持收发，没有断开和连接的概念，如果需要知道对方是否在线，建议在应该层做心跳包来解决；
+- **UdpNetwork：** udp协议封装，由于UDP是无状态的，所以其只支持收发，没有断开和连接的概念，如果需要知道对方是否在线，建议在应该层做心跳包来解决；
 
 ### 工具
 
@@ -37,7 +37,7 @@ libuv是c语言库，使用起来比较麻烦，且它是非线程安全的网�
 
 - **TCPServer：** tcp服务器端；
 
-- **TcpClient：**tcp客户端；
+- **TcpClient：** tcp客户端；
 
 
 
@@ -49,13 +49,13 @@ cmake版本是3.17.2；
 
 ### windows编译
 
-**vs2017：**用cmake gui工具 转为 vs2017+项目文件进行编译；
+**vs2017：** 用cmake gui工具 转为 vs2017+项目文件进行编译；
 
 
 
 ### linux编译
 
-**codeblocks：**用cmake转为 codeblocks项目进行编译；
+**codeblocks：** 用cmake转为 codeblocks项目进行编译；
 
 命令：cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles"  <u>*CMakeLists.txt所在路径*</u>
 
